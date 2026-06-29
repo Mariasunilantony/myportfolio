@@ -2,10 +2,14 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import portfolio from "../data/portfolio";
 import profile from "../assets/maria.jpeg";
+import resume from "../assets/resume.pdf";
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-[#09090B] text-white flex items-center">
+    <section
+  id="home"
+  className="min-h-screen bg-[#09090B] text-white flex items-center"
+>
       <div className="max-w-7xl mx-auto px-8 w-full">
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
@@ -48,7 +52,7 @@ function Hero() {
             <div className="mt-10 flex flex-wrap gap-4">
 
   <a
-    href="/resume.pdf"
+    href={resume}
     download
     className="px-6 py-3 rounded-full bg-cyan-500 text-white font-medium hover:bg-cyan-400 transition-all duration-300 hover:scale-105"
   >
@@ -72,6 +76,14 @@ function Hero() {
   >
     🔗 LinkedIn
   </a>
+  <a
+  href="https://myportfolio-iota-flame-26.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 rounded-full border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white transition-all duration-300 hover:scale-105"
+>
+  🌐 Live Portfolio
+</a>
 
 </div>
 

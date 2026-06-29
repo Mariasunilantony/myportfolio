@@ -26,39 +26,54 @@ function Navbar() {
 
         {/* Desktop Menu */}
 
-        <ul className="hidden md:flex items-center gap-8 text-gray-300">
+       <ul className="hidden md:flex items-center gap-8 text-gray-300">
 
-          <li className="hover:text-cyan-400 transition cursor-pointer">
-            Home
-          </li>
+  <li>
+    <a href="#home" className="hover:text-cyan-400 transition">
+      Home
+    </a>
+  </li>
 
-          <li className="hover:text-cyan-400 transition cursor-pointer">
-            About
-          </li>
+  <li>
+    <a href="#about" className="hover:text-cyan-400 transition">
+      About
+    </a>
+  </li>
 
-          <li className="hover:text-cyan-400 transition cursor-pointer">
-            Skills
-          </li>
+  <li>
+    <a href="#skills" className="hover:text-cyan-400 transition">
+      Skills
+    </a>
+  </li>
 
-          <li className="hover:text-cyan-400 transition cursor-pointer">
-            Projects
-          </li>
+  <li>
+    <a href="#projects" className="hover:text-cyan-400 transition">
+      Projects
+    </a>
+  </li>
 
-          <li className="hover:text-cyan-400 transition cursor-pointer">
-            Education
-          </li>
+  <li>
+    <a href="#education" className="hover:text-cyan-400 transition">
+      Education
+    </a>
+  </li>
 
-          <li className="hover:text-cyan-400 transition cursor-pointer">
-            Contact
-          </li>
+  <li>
+    <a href="#contact" className="hover:text-cyan-400 transition">
+      Contact
+    </a>
+  </li>
 
-        </ul>
+</ul>
 
         {/* Right Side */}
 
         <div className="flex items-center gap-4">
 
-          <button className="hidden md:flex p-2 rounded-full hover:bg-white/10 transition">
+          <button
+  title="Dark/Light Mode (Coming Soon)"
+  className="hidden md:flex p-2 rounded-full hover:bg-white/10 transition cursor-not-allowed"
+>
             <Moon className="w-5 h-5 text-white" />
           </button>
 
